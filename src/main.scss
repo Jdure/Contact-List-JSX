@@ -1,0 +1,62 @@
+// @Author: Jonathan Dure <JDure>
+// @Date:   "November 28th 2017"
+// @Email:  Dure0018@algonquinlive.com
+// @Project: Midterm
+// @Filename: main.scss
+// @Last modified by:   JDure
+// @Last modified time: "November 30th 2017"
+
+$font-stack: Helvetica, sans-serif;
+$font-stack-backup: Verdana, sans-serif;
+$header-color: #00285E;
+$border-color: #FDB927;
+$primary-text-color: #fff;
+$li-background-color: #B8CFE9;
+$detail-background-color: #6189B9;
+$text-font-size: 150%;
+
+
+ul {
+    width: 40%;
+    height: 100px;
+    float: left;
+
+    li {
+        font: 200 20px/1.5 $font-stack, $font-stack-backup;
+        background-color: $li-background-color;
+        list-style: none;
+        border: solid $border-color 2px;
+    }
+}
+
+.title {
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $header-color;
+    color: $primary-text-color;
+    border: solid $border-color 5px;
+}
+
+.email,
+.postal,
+.cell,
+.dob,
+.age,
+.postal,
+.filler,
+.location,
+.name {
+    text-transform: capitalize;
+    font-size: $text-font-size;
+}
+
+.card {
+    background-color: $detail-background-color;
+    width: 50%;
+    height: 50%;
+    float: right;
+    color: $primary-text-color;
+    border: solid $border-color 3px;
+}
